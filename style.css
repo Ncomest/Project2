@@ -1,247 +1,227 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
 }
 
 body {
-    background-color: #eee;
-    font-family: 'Lato', sans-serif;
+ background-color: #eee;
+ font-family: "Lato", sans-serif;
+ padding-top: 80px;
 }
 
-/**
 #header {
-    background-color: aqua;
-    border: 1px solid;
-    display: flex;
-    position: fixed;
-    
+ height: 80px;
+ background-color: antiquewhite;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ position: fixed;
+ width: 100%;
+ top: 0;
+ left: 0;
+ padding: 0 20px;
+ z-index: 1000;
 }
 
-div .logo {
-    background-color: #e55;
-    width: 60vw;
-    
-
+.logo {
+ max-width: 200px;
 }
 
 #header-img {
-    width: 100%;
-    
+ width: 100%;
 }
 
 #nav-bar {
-    background-color: #ffff00;
-    width: 40vw;
-    
-}
-
-#nav-bar ul li {
-    flex-direction: row;
-    display: flex;
-    position: absolute;
-    
-}
-**/
-
-#header {
-    height: 80px;
-    background-color: antiquewhite;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;   
+ display: flex;
 }
 
 #nav-bar-menu {
-    list-style-type: none;
-    padding-left: 0;
-    margin-bottom: 0;   
-}
-
-#nav-bar-menu li {
-    display: inline-block;
-    margin-right: 30px;   
+ list-style-type: none;
+ display: flex;
+ gap: 20px;
 }
 
 .nav-link {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 20px;   
+ text-decoration: none;
+ color: black;
+ font-weight: bold;
+ font-size: 18px;
 }
 
-#nav-bar-menu li a:hover {   
-    color: rgb(16, 19, 212);
-}
-
-div .logo {  
-    width: 60vw;
-}
-#header-img {
-    width: 100%; 
-}
-
-.container {
-    height: 100px;
-    width: 100%;
+.nav-link:hover {
+ color: rgb(16, 19, 212);
 }
 
 #hero {
-    display: flex;
-    flex-direction: column;
-    height: 170px;
-    align-items: center;
-    padding: 0px;  
-}
-#hero h2 {
-    align-items: center;
-    padding: 20px;
-}
-#form {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px; 
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ padding: 40px 20px;
+ background-color: #fff;
 }
 
-input {
-    display: flex;
-    padding: 5px;
-    margin: 5px
+#hero h2 {
+ margin-bottom: 20px;
+ font-size: 24px;
+}
+
+#form {
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+
+#email,
+#submit {
+ padding: 10px;
+ width: 300px;
+ max-width: 100%;
+ font-size: 16px;
 }
 
 #submit {
-    display: flex;
-    align-items: center;
-    margin: auto;
-    padding: 5px;
-    background-color: rgb(218, 218, 42);
-    border: 0px solid;
-    height: 30px;
+ background-color: rgb(218, 218, 42);
+ border: none;
+ cursor: pointer;
+}
+
+#submit:hover {
+ background-color: rgb(200, 200, 38);
 }
 
 #features {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    width: 70%;
-    margin: auto;
-    padding: 10px;
-    
+ padding: 40px 20px;
+ background-color: #fff;
 }
 
 .grid {
-    padding: 5px;
-    margin: 15px;
-    display: flex; 
-    width: 100%; 
+ display: flex;
+ align-items: center;
+ gap: 20px;
+ padding: 20px 0;
 }
 
 .icon {
-    width: 50px;
-    height: 10px;
-    background-color: rgb(228, 189, 18);
-    margin: 17px;
-}
-.desc h2{
-    padding: 5px;
-    margin: 5px;
+ flex-shrink: 0;
+ width: 50px;
+ height: 50px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 30px;
 }
 
-.desc p{
-    padding: 5px;
-    margin: 5px;
-    color: rgba(99, 92, 92, 0.747);
+.fire::before {
+ content: "\1F525"; /* Unicode for fire */
+}
+
+.truck::before {
+ content: "\1F69B"; /* Unicode for truck */
+}
+
+.battery::before {
+ content: "\1F50B"; /* Unicode for battery */
+}
+
+.desc {
+ flex-grow: 1;
 }
 
 #how-it-works {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    margin: auto;
+ padding: 40px 20px;
+ background-color: #fff;
+ text-align: center;
 }
 
 #video {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    margin: auto;
-    width: 640px;
-    height: 480px;
+ width: 100%;
+ max-width: 640px;
+ height: auto;
+ aspect-ratio: 16 / 9;
 }
 
 #pricing {
-    display: flex;
-    margin: 30px;
-    padding: 30px;
-    align-items: center;
-    justify-content: space-between;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 20px;
+ padding: 40px 20px;
+ background-color: #fff;
 }
 
 .product {
-    border: 1px solid black;
-    padding: 0px;
-    margin: 20px;
-    width: 400px;
-    height: 400px;
-    justify-content: space-between;
-    justify-items: center;
+ flex: 1 1 calc(33.333% - 40px);
+ max-width: calc(33.333% - 40px);
+ border: 1px solid black;
+ padding: 20px;
+ text-align: center;
 }
 
-.level {
-    display: flex;
-    background-color: rgba(29, 28, 31, 0.418);
-    justify-content: center;
-    height: 50px;
-    align-items: center;
-    border: 1px solid black;
+.product h2,
+.product ol {
+ margin: 20px 0;
 }
 
-.product h2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+.product ol {
+ padding-left: 20px;
+ text-align: left;
 }
 
 .product ol li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
+ margin-bottom: 10px;
 }
 
 .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(179, 179, 38);
-    margin: 20px auto;
-    padding: 20px;
-    width: 50%;
-    height: 10px;
+ background-color: rgb(179, 179, 38);
+ padding: 10px;
+ color: #000;
+ text-decoration: none;
+ border: none;
+ cursor: pointer;
+}
+
+.btn:hover {
+ background-color: rgb(160, 160, 35);
 }
 
 footer {
-    background-color: rgba(22, 24, 24, 0.144);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    
+ padding: 20px;
+ background-color: rgba(22, 24, 24, 0.144);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ flex-wrap: wrap;
 }
 
 footer ul {
-    display: flex;
-    list-style-type: none;
-   
+ list-style-type: none;
+ display: flex;
+ gap: 20px;
 }
 
-footer ul li a{
-    display: flex;
-    padding: 20px;
-    text-decoration: none;
-    color: black;
+footer ul li a {
+ text-decoration: none;
+ color: black;
 }
 
+footer ul li a:hover {
+ color: rgb(16, 19, 212);
+}
+
+@media (max-width: 768px) {
+ .grid {
+  flex-direction: column;
+  align-items: flex-start;
+ }
+
+ #nav-bar-menu {
+  flex-direction: column;
+  gap: 10px;
+ }
+
+ .product {
+  flex: 1 1 100%;
+  max-width: 100%;
+ }
+}
